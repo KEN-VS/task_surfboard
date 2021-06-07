@@ -425,7 +425,7 @@ ul li {
 }
 
 .hero {
-  background: url(../../img/mainbg.png) center center/cover no-repeat, rgba(25, 104, 177, 0.8);
+  background: url(../img/mainbg.png) center center/cover no-repeat, rgba(25, 104, 177, 0.8);
   height: 100vh;
   min-height: 652px;
   color: #fff;
@@ -513,7 +513,7 @@ ul li {
   font-weight: bold;
 }
 .contacts__phone::before {
-  content: url(../../img/tel.svg);
+  content: url(../img/tel.svg);
   margin-right: 5px;
 }
 
@@ -643,7 +643,7 @@ ul li {
   display: none;
 }
 .benefits__item::after {
-  content: url(../../img/decor.png);
+  content: url(../img/decor.png);
   position: absolute;
   top: 22%;
   left: 83%;
@@ -790,7 +790,7 @@ ul li {
 }
 
 .order-section {
-  background: url(../../img/cta.png) center top/cover no-repeat;
+  background: url(../img/cta.png) center top/cover no-repeat;
   color: white;
 }
 .order-section .section__title {
@@ -901,7 +901,7 @@ ul li {
   -o-border-radius: 0%;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../img/check.svg) center center no-repeat;
+  background: url(../img/check.svg) center center no-repeat;
 }
 
 .radio__elem {
@@ -946,7 +946,7 @@ ul li {
 }
 
 .map-section {
-  background: url(../../img/map.png) center center/cover no-repeat;
+  background: url(../img/map.png) center center/cover no-repeat;
 }
 
 .footer__section {
@@ -1031,31 +1031,31 @@ ul li {
 }
 
 .socials__logo--vk {
-  background: url(../../img/socials/vk.png) center center no-repeat;
+  background: url(../img/socials/vk.png) center center no-repeat;
 }
 .socials__logo--vk:hover {
-  background: url(../../img/socials/vk-hover.png) center center no-repeat;
+  background: url(../img/socials/vk-hover.png) center center no-repeat;
 }
 
 .socials__logo--fb {
-  background: url(../../img/socials/fb.png) center center no-repeat;
+  background: url(../img/socials/fb.png) center center no-repeat;
 }
 .socials__logo--fb:hover {
-  background: url(../../img/socials/fb-hover.png) center center no-repeat;
+  background: url(../img/socials/fb-hover.png) center center no-repeat;
 }
 
 .socials__logo--inst {
-  background: url(../../img/socials/inst.png) center center no-repeat;
+  background: url(../img/socials/inst.png) center center no-repeat;
 }
 .socials__logo--inst:hover {
-  background: url(../../img/socials/inst-hover.png) center center no-repeat;
+  background: url(../img/socials/inst-hover.png) center center no-repeat;
 }
 
 .socials__logo--tw {
-  background: url(../../img/socials/tw.png) center center no-repeat;
+  background: url(../img/socials/tw.png) center center no-repeat;
 }
 .socials__logo--tw:hover {
-  background: url(../../img/socials/tw-hover.png) center center no-repeat;
+  background: url(../img/socials/tw-hover.png) center center no-repeat;
 }
 
 .socials__logo {
