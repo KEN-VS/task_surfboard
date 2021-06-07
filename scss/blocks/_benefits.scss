@@ -1,0 +1,21 @@
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    padding-right: 5%;
+    position: relative;
+    &:last-child {
+        padding-right: 0;
+        &::after {
+            display: none;
+        }
+    }
+    &::after {
+        content: url(../../img/decor.png);
+        position: absolute;
+        top: 22%;
+        left: 83%;
+    }
+}

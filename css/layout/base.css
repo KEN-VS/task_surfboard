@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans", Helvetica, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.42;
+  background: #001821;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 942px;
+}

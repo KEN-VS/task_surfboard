@@ -1,0 +1,15 @@
+.contacts__address {
+    font-size: 21px;
+    font-style: normal;
+    line-height: 1.1;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    &::before {
+        content: url(../../img/tel.svg);
+        margin-right: 5px;
+    }
+}

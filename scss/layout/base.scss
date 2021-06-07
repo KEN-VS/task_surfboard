@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    color: $grey;
+    font-size: $basefontsize;
+    line-height: 1.2;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: $containerwidth+20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.wrapper__content {
+    flex: 1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: $containerwidth;
+}

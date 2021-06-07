@@ -1,0 +1,39 @@
+.interactive-avatar {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: border-color .4s;
+    -webkit-transition: border-color .4s;
+    -moz-transition: border-color .4s;
+    -ms-transition: border-color .4s;
+    -o-transition: border-color .4s;
+    &:hover {
+        border: 6px solid $yellow;
+    }
+    &--active {
+        border: 6px solid $yellow;
+    }
+}
+
+.interactive-avatar__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.interactive-avatar__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
