@@ -1,3 +1,9 @@
 .map-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    flex: 1;
     background: url(../img/map.png) center center/ cover no-repeat;
 }

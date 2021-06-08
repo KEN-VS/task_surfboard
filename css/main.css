@@ -447,6 +447,7 @@ ul li {
 }
 
 .hero__title {
+  height: 50%;
   width: 50%;
 }
 
@@ -460,7 +461,7 @@ ul li {
 
 .hero__desc {
   font-size: 21px;
-  margin-bottom: 39px;
+  margin-bottom: 60px;
 }
 
 .header {
@@ -805,7 +806,7 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .form__col {
@@ -823,6 +824,10 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
+}
+
+.textarea__row {
+  margin-bottom: 34px;
 }
 
 .form__block {
@@ -946,14 +951,27 @@ ul li {
 }
 
 .map-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: url(../img/map.png) center center/cover no-repeat;
 }
 
-.footer__section {
+.footer {
   min-height: 94px;
 }
 
-.footer {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,7 +983,7 @@ ul li {
           justify-content: space-between;
   padding: 18px 0;
 }
-.footer .contacts .contacts__phone {
+.footer__container .contacts .contacts__phone {
   font-size: 21px;
   font-weight: normal;
 }
@@ -973,7 +991,7 @@ ul li {
 .fixed-menu {
   position: fixed;
   top: 30%;
-  right: 5%;
+  right: calc(50vw - 500px);
   z-index: 100;
 }
 
