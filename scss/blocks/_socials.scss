@@ -3,28 +3,26 @@
 }
 
 .socials__item {
-    margin-right: 14px;
+    margin-right: rem(14px);
     &:last-child {
         margin-right: 0;
     }
 }
 
-@each $social in (vk, fb, inst, tw) {
-    .socials__logo--#{$social} {
-        background: url(../img/socials/#{$social}.png) center center no-repeat;
-        &:hover {
-            background: url(../img/socials/#{$social}-hover.png)center center no-repeat;
-        }
-    }
-}
-
-.socials__logo {
-    display: block;
-    width: 20px;
-    height: 20px;
+.socials__icon {
+    width: rem(20px);
+    height: rem(20px);
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -ms-transition: .4s;
     -o-transition: .4s;
+    fill: #b3b3b3;
+    &:hover {
+        fill: #000;
+    }
+}
+
+.socials__logo {
+    display: block;
 }

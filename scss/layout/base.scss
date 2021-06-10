@@ -1,3 +1,13 @@
+html {
+    font-size: $basefontsize;
+    @include tablets {
+        font-size: $basefontsize - 1px;
+    }
+    @include phones {
+        font-size: $basefontsize - 2px;
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -7,7 +17,6 @@ body {
 body {
     font-family: 'Alegreya Sans', Helvetica, sans-serif;
     color: $grey;
-    font-size: $basefontsize;
     line-height: 1.2;
     background: #fff;
     -webkit-font-smoothing: antialiased;
@@ -47,14 +56,10 @@ button {
 
 .wrapper {
     overflow: hidden;
-    min-width: $containerwidth+20px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-}
-
-.wrapper__content {
-    flex: 1;
+    position: relative;
 }
 
 ul {
@@ -69,5 +74,9 @@ ul li {
 .container {
     position: relative;
     margin: 0 auto;
-    width: $containerwidth;
+    max-width: $containerwidth;
+    width: 95%;
+    @include phones {
+        width: 96%;
+    }
 }

@@ -1,15 +1,49 @@
+.contacts {
+    @include phones {
+        margin-bottom: rem(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .contacts__address {
-    font-size: 21px;
+    font-size: rem(21px);
     font-style: normal;
     line-height: 1.1;
+    @include phones {
+        margin-bottom: rem(10px);
+        color: #000;
+    }
 }
 
 .contacts__phone {
+    display: flex;
     text-decoration: none;
-    font-size: 22px;
+    font-size: rem(22px);
     font-weight: bold;
-    &::before {
-        content: url(../img/tel.svg);
-        margin-right: 5px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.contacts__phone.header__phone {
+    @include tablets {
+        display: none;
     }
+    @include phones {
+        display: none;
+    }
+}
+
+.phone__icon-elem {
+    width: rem(13px);
+    height: rem(14px);
+    margin-right: rem(6px);
+    fill: #fff;
+}
+
+.phone__icon-elem.footer-phone {
+    fill: #000;
+    width: rem(12px);
+    height: rem(12px);
 }

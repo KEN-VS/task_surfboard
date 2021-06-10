@@ -3,7 +3,13 @@
     color: white;
     .section__title {
         color: inherit;
-        margin-bottom: 59px;
+        margin-bottom: rem(59px);
+        @include tablets {
+            margin-bottom: rem(39px);
+        }
+        @include phones {
+            margin-bottom: rem(39px);
+        }
     }
 }
 

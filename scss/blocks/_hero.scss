@@ -1,8 +1,16 @@
 .hero {
     background: url(../img/mainbg.png) center center / cover no-repeat, rgba(25, 104, 177, .8);
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     color: #fff;
+    @include tablets {
+        background: url(../../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
+        background-size: auto 91%;
+    }
+    @include phones {
+        background: url(../../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
+        background-size: auto 91%;
+    }
 }
 
 .hero__container {
@@ -10,23 +18,40 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 68px;
+    padding: rem(24px) 0 rem(68px);
 }
 
 .hero__title {
     height: 50%;
     width: 50%;
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
+    @include phones {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 19px;
+    margin-bottom: rem(19px);
 }
 
 .hero__desc {
-    font-size: 21px;
-    margin-bottom: 60px;
+    font-size: rem(21px);
+    margin-bottom: rem(60px);
+}
+
+.hero__icons {
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
 }

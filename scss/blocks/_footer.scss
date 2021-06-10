@@ -1,14 +1,17 @@
 .footer {
-    min-height: 94px;
+    min-height: rem(94px);
 }
 
 .footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: rem(18px) 0;
     .contacts .contacts__phone {
-        font-size: 21px;
+        font-size: rem(21px);
         font-weight: normal;
+    }
+    @include phones {
+        flex-direction: column;
     }
 }

@@ -1,5 +1,8 @@
 $basefontsize: 18px;
 $containerwidth:942px;
+//breakpoints
+$tablets:768px;
+$phones: 480px;
 //colors
 $yellow:#FEDB3F;
 $grey:#666666;
@@ -7,6 +10,8 @@ $biege:#F8FAF9;
 $black:#292929;
 //z-idex
 $z-fixed-menu:100;
+//media
+@import "layout/media.scss";
 //import
 @import "layout/normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
@@ -30,3 +35,4 @@ $z-fixed-menu:100;
 @import "blocks/footer";
 @import "blocks/fixed-menu";
 @import "blocks/socials";
+@import "blocks/hamburger";

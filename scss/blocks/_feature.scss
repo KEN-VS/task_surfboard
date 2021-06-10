@@ -3,15 +3,19 @@
 }
 
 .feature__icon {
-    height: 35px;
-    width: 35px;
-    margin-right: 14px;
+    margin-right: rem(14px);
+}
+
+.feature__img {
+    height: rem(35px);
+    width: rem(35px);
+    fill: #fff;
 }
 
 .feature__text {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: bold;
     line-height: 1.1;
-    max-width: 90px;
+    max-width: rem(90px);
     text-align: left;
 }

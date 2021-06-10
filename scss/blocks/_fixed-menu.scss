@@ -6,7 +6,7 @@
 }
 
 .fixed-menu__item {
-    margin-bottom: 6px;
+    margin-bottom: rem(6px);
     &--active {
         .fixed-menu__link {
             border-color: #fff;
@@ -15,22 +15,22 @@
 }
 
 .fixed-menu__link {
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
     &::before {
         content: "";
         position: absolute;
         display: block;
-        width: 9px;
-        height: 9px;
+        width: rem(9px);
+        height: rem(9px);
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
