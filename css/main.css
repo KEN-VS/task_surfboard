@@ -445,13 +445,13 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background: url(../../img/mainbg.png) right 20% bottom no-repeat, #1968b1;
+    background: url(../img/mainbg.png) right 20% bottom no-repeat, #1968b1;
     background-size: auto 91%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    background: url(../../img/mainbg.png) right 20% bottom no-repeat, #1968b1;
+    background: url(../img/mainbg.png) right 20% bottom no-repeat, #1968b1;
     background-size: auto 91%;
   }
 }

@@ -4,11 +4,11 @@
     min-height: rem(652px);
     color: #fff;
     @include tablets {
-        background: url(../../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
+        background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
         background-size: auto 91%;
     }
     @include phones {
-        background: url(../../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
+        background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
         background-size: auto 91%;
     }
 }
