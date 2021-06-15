@@ -11,15 +11,11 @@
                     -moz-border-radius: 0%;
                     -ms-border-radius: 0%;
                     -o-border-radius: 0%;
+                    &::before {
+                        background: url(../img/check.svg) center center no-repeat;
+                    }
                 }
             }
-        }
-        
-        .checked {
-            width: rem(18px);
-            height: rem(9px);
-            fill: #FEDB3F;
-            display: none;
         }
         
         .radio__elem {

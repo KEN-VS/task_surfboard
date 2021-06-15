@@ -1341,12 +1341,8 @@ ul li {
   -ms-border-radius: 0%;
   -o-border-radius: 0%;
 }
-
-.checked {
-  width: 1rem;
-  height: 0.5rem;
-  fill: #FEDB3F;
-  display: none;
+.radio--checkbox .radio__visible::before {
+  background: url(../img/check.svg) center center no-repeat;
 }
 
 .radio__elem {
