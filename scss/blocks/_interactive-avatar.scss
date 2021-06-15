@@ -1,8 +1,8 @@
 .interactive-avatar {
-    width: rem(74px);
-    height: rem(74px);
+    width: 74px;
+    height: 74px;
     border-radius: 50%;
-    border: rem(6px) solid transparent;
+    border: 6pxsolid transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -15,10 +15,14 @@
     -ms-transition: border-color .4s;
     -o-transition: border-color .4s;
     &:hover {
-        border: rem(6px) solid $yellow;
+        border: 6px solid $yellow;
     }
     &--active {
-        border: rem(6px) solid $yellow;
+        border: 6px solid $yellow;
+    }
+    @include phones {
+        width: 64px;
+        height: 64px;
     }
 }
 

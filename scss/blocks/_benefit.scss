@@ -1,43 +1,58 @@
-        .benefit {
-            text-align: center;
-            @include phones {
-                display: flex;
-                text-align: left;
-            }
+    .benefit {
+        text-align: center;
+        @include phones {
+            display: flex;
+            text-align: left;
+            align-items: center;
         }
-        
-        .benefit__icon {
-            display: inline-flex;
-            width: rem(128px);
-            height: rem(128px);
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            background: $biege;
-            margin-bottom: rem(20px);
-            overflow: hidden;
-            @include phones {
-                margin-bottom: 0;
-                margin-right: rem(12px);
-            }
+    }
+    
+    .benefit__wrap {
+        margin-bottom: 20px;
+        @include phones {
+            margin-bottom: 0;
+            margin-right: rem(12px);
         }
-        
-        .benefit__img {
-            margin: auto;
-            width: rem(68px);
-            height: rem(68px);
-            fill: #000;
+    }
+    
+    .benefit__icon {
+        display: inline-flex;
+        width: rem(128px);
+        height: rem(128px);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: $biege;
+        overflow: hidden;
+        @include phones {
+            width: rem(144px);
+            height: rem(144px);
         }
-        
-        .benefit__title {
-            font-size: rem(27px);
-            font-weight: bold;
-            color: $black;
-            margin-bottom: rem(20px);
+    }
+    
+    .benefit__img {
+        margin: auto;
+        width: rem(68px);
+        height: rem(68px);
+        fill: #000;
+    }
+    
+    .benefit__title {
+        font-size: rem(27px);
+        font-weight: bold;
+        color: $black;
+        margin-bottom: rem(20px);
+        @include tablets {
+            margin-bottom: rem(10px);
         }
-        
-        .benefit__text {
-            font-weight: 300;
+        @include phones {
+            margin-bottom: rem(14px);
         }
+    }
+    
+    .benefit__text {
+        font-weight: 300;
+        line-height: 1.2;
+    }

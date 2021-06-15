@@ -8,10 +8,10 @@
 }
 
 .contacts__address {
-    font-size: rem(21px);
+    font-size: 21px;
     font-style: normal;
     line-height: 1.1;
-    @include phones {
+    @include tablets {
         margin-bottom: rem(10px);
         color: #000;
     }
@@ -20,13 +20,15 @@
 .contacts__phone {
     display: flex;
     text-decoration: none;
-    font-size: rem(22px);
+    font-size: 21px;
     font-weight: bold;
     align-items: center;
     white-space: nowrap;
+    font-style: normal;
 }
 
 .contacts__phone.header__phone {
+    font-size: rem(22px);
     @include tablets {
         display: none;
     }
@@ -44,6 +46,6 @@
 
 .phone__icon-elem.footer-phone {
     fill: #000;
-    width: rem(12px);
-    height: rem(12px);
+    width: 12px;
+    height: 12px;
 }

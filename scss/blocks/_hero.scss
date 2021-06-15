@@ -1,57 +1,60 @@
-.hero {
-    background: url(../img/mainbg.png) center center / cover no-repeat, rgba(25, 104, 177, .8);
-    height: 100vh;
-    min-height: rem(652px);
-    color: #fff;
-    @include tablets {
-        background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
-        background-size: auto 91%;
+    .hero {
+        background: url(../img/mainbg.png) center center / cover no-repeat, rgba(25, 104, 177, .8);
+        height: 100vh;
+        min-height: rem(652px);
+        color: #fff;
+        @include tablets {
+            background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
+            background-size: auto calc(100% - 91px);
+        }
     }
-    @include phones {
-        background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
-        background-size: auto 91%;
+    
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 24px 0 rem(68px);
     }
-}
-
-.hero__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: rem(24px) 0 rem(68px);
-}
-
-.hero__title {
-    height: 50%;
-    width: 50%;
-    @include tablets {
-        width: 100%;
-        text-align: center;
+    
+    .hero__title {
+        height: 50%;
+        width: 50%;
+        @include tablets {
+            width: 100%;
+            text-align: center;
+        }
+        @include phones {
+            width: 100%;
+            text-align: center;
+        }
     }
-    @include phones {
-        width: 100%;
-        text-align: center;
+    
+    .hero__main-title {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: rem(19px);
+        @include tablets {
+            margin-bottom: rem(14px);
+        }
+        @include phones {
+            font-size: rem(45px);
+            line-height: 0.9;
+        }
     }
-}
-
-.hero__main-title {
-    font-size: rem(48px);
-    font-weight: bold;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin-bottom: rem(19px);
-}
-
-.hero__desc {
-    font-size: rem(21px);
-    margin-bottom: rem(60px);
-}
-
-.hero__icons {
-    @include tablets {
-        display: none;
+    
+    .hero__desc {
+        font-size: rem(21px);
+        margin-bottom: rem(40px);
     }
-    @include phones {
-        display: none;
+    
+    .hero__icons {
+        @include tablets {
+            display: none;
+        }
+        @include phones {
+            display: none;
+        }
     }
-}

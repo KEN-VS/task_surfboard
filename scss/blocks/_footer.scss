@@ -8,8 +8,11 @@
     justify-content: space-between;
     padding: rem(18px) 0;
     .contacts .contacts__phone {
-        font-size: rem(21px);
+        font-size: 21px;
         font-weight: normal;
+    }
+    @include tablets {
+        padding: rem(30px) rem(10px) rem(30px) rem(0px);
     }
     @include phones {
         flex-direction: column;
