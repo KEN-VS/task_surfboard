@@ -6,6 +6,9 @@ html {
     @include phones {
         font-size: 2vmax;
     }
+    @include Iphones {
+        font-size: 1.75vmax;
+    }
 }
 
 html,

@@ -355,6 +355,11 @@ html {
     font-size: 2vmax;
   }
 }
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 1.75vmax;
+  }
+}
 
 html,
 body {

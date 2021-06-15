@@ -13,3 +13,9 @@
         @content;
     }
 }
+
+@mixin Iphones {
+    @media screen and (max-width: $Iphones) {
+        @content;
+    }
+}
