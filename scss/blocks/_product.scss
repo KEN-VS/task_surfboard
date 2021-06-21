@@ -1,0 +1,217 @@
+.product__container {
+    display: flex;
+    justify-content: flex-end;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @include phones {
+        justify-content: space-between;
+    }
+}
+
+.product__image {
+    flex-shrink: 0;
+    width: 50%;
+    @include tablets {
+        width: 45%;
+    }
+    @include phones {
+        width: 55%;
+        margin-bottom: 5%;
+    }
+}
+
+.product__content {
+    flex-shrink: 0;
+    width: 40%;
+    @include tablets {
+        align-items: center;
+        text-align: center;
+        width: 68%;
+    }
+    @include phones {
+        width: 75%;
+    }
+}
+
+.product__title {
+    font-size: rem(36px);
+    font-weight: bold;
+    line-height: 1.2;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: rem(24px);
+    @include tablets {
+        font-size: rem(31px);
+        margin-bottom: rem(18px);
+    }
+    @include phones {
+        font-size: rem(34px);
+    }
+}
+
+.product__text {
+    margin-bottom: rem(24px);
+    line-height: 1.2;
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
+    @include phones {
+        font-size: rem(20px);
+    }
+}
+
+.product__features {
+    display: flex;
+    margin-bottom: rem(24px);
+    @include tablets {
+        justify-content: center;
+        text-align: left;
+        margin-bottom: rem(30px);
+    }
+}
+
+.product__feature {
+    line-height: 1.2;
+    margin-right: rem(52px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.product__feature-desc {
+    font-weight: bold;
+    color: $black;
+}
+
+.product__order {
+    display: flex;
+    justify-content: space-between;
+    @include tablets {
+        justify-content: flex-start;
+        padding-left: 16%;
+    }
+    @include phones {
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.product__price {
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: 1;
+    color: $black;
+    @include tablets {
+        margin-right: rem(52px);
+    }
+    @include phones {
+        font-size: rem(65px);
+        margin-right: 0;
+    }
+}
+
+.product__definitions {
+    position: absolute;
+    top: 0;
+    left: -9999999px;
+    transition: opacity .4s;
+    background: rgb(255, 255, 255, .8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 18px 14px 20px;
+    min-width: 273px;
+    opacity: 0;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+}
+
+.product__definition {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(8px);
+    padding: 10px 12px;
+    color: #000;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.definition__img {
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(16px);
+}
+
+.definition__text {
+    font-weight: 500;
+}
+
+.definiton__size {
+    margin-left: auto;
+}
+
+
+/*.definition__text {
+    flex-shrink: 0;
+}
+
+.definiton__size {
+    flex-shrink: 0;
+}*/
+
+.product__composition {
+    margin-bottom: rem(52px);
+    position: relative;
+    display: inline-flex;
+    &:hover {
+        .product__definitions {
+            opacity: 1;
+            left: 100%;
+        }
+    }
+    @include tablets {
+        display: none;
+    }
+}
+
+.product__composition-btn {
+    background: #3A587E;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    min-width: rem(91px);
+    align-items: center;
+    padding: 17px 5px 12px 7px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background: #3465A3;
+    }
+}
+
+.product__pic-icon {
+    fill: #fff;
+    width: rem(38px);
+    height: rem(38px);
+    margin-bottom: 7px;
+}
+
+.product__pic-title {
+    font-size: rem(14px);
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}

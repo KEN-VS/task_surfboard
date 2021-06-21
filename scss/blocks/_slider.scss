@@ -1,0 +1,55 @@
+.slider-section {
+    background: $biege;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider__control {
+    width: rem(13px);
+    height: rem(27px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    transition: translateY(-50%);
+    -webkit-transition: translateY(-50%);
+    -moz-transition: translateY(-50%);
+    -ms-transition: translateY(-50%);
+    -o-transition: translateY(-50%);
+    &--right {
+        right: -4%;
+    }
+    &--left {
+        left: 1%;
+    }
+    @include tablets {
+        top: 31%;
+        &--right {
+            right: 18%;
+        }
+        &--left {
+            left: 18%;
+        }
+    }
+    @include phones {
+        top: 25%;
+        width: rem(16px);
+        height: rem(30px);
+        &--right {
+            right: 1%;
+        }
+        &--left {
+            left: 2%;
+        }
+    }
+}
+
+.slider__control-img {
+    stroke: black;
+    fill: transparent;
+}
