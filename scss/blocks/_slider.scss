@@ -8,8 +8,8 @@
 }
 
 .slider__control {
-    width: rem(13px);
-    height: rem(27px);
+    width: rem(16px);
+    height: rem(30px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,23 +28,23 @@
         left: 1%;
     }
     @include tablets {
-        top: 31%;
+        top: 29%;
         &--right {
-            right: 18%;
+            right: 16%;
         }
         &--left {
-            left: 18%;
+            left: 22%;
         }
     }
     @include phones {
-        top: 25%;
+        top: 26%;
         width: rem(16px);
         height: rem(30px);
         &--right {
-            right: 1%;
+            right: -2%;
         }
         &--left {
-            left: 2%;
+            left: 3%;
         }
     }
 }
@@ -52,4 +52,5 @@
 .slider__control-img {
     stroke: black;
     fill: transparent;
+    stroke-width: 2;
 }

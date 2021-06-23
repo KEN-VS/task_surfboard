@@ -15,11 +15,11 @@
     flex-shrink: 0;
     width: 50%;
     @include tablets {
-        width: 45%;
+        width: 40%;
     }
     @include phones {
-        width: 55%;
-        margin-bottom: 5%;
+        width: 54%;
+        margin-bottom: 1%;
     }
 }
 
@@ -118,7 +118,7 @@
     top: 0;
     left: -9999999px;
     transition: opacity .4s;
-    background: rgb(255, 255, 255, .8);
+    background: #d5d5d5;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     -webkit-border-radius: 4px;
