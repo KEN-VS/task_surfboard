@@ -1,20 +1,48 @@
   .reviews__display {
       background: $biege;
       padding: rem(42px) rem(142px) rem(42px) rem(42px);
-      display: flex;
       margin-bottom: rem(15px);
       @include tablets {
           padding: rem(60px) rem(24px) rem(22px) rem(22px);
+          margin-right: rem(30px);
+      }
+  }
+  
+  .revies__list {
+      position: relative;
+      min-height: rem(348px);
+  }
+  
+  .reviews__item {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      transition: .3s;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+      opacity: 0;
+      @include tablets {
           flex-direction: column;
           text-align: center;
           align-items: center;
-          margin-right: rem(30px);
       }
       @include phones {
           flex-direction: column;
           text-align: center;
           align-items: center;
       }
+  }
+  
+  .reviews__item.active {
+      position: static;
+      opacity: 1;
+      pointer-events: unset;
   }
   
   .reviews__avatar {

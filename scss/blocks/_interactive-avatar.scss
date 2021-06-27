@@ -17,13 +17,17 @@
     &:hover {
         border: 6px solid $yellow;
     }
-    &--active {
+    /* &--active {
         border: 6px solid $yellow;
-    }
+    }*/
     @include phones {
         width: 64px;
         height: 64px;
     }
+}
+
+.interactive-avatar.active {
+    border: 6px solid $yellow;
 }
 
 .interactive-avatar__link {

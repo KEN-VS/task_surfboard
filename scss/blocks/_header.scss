@@ -41,10 +41,23 @@
     &:last-child {
         margin-right: 0%;
     }
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
 }
 
 .menu__link {
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
+    @include tablets {
+        font-size: rem(36px);
+        line-height: 2;
+        font-weight: normal;
+        &:hover {
+            cursor: pointer;
+            opacity: .9;
+        }
+    }
 }

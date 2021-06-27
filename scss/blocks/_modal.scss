@@ -1,0 +1,24 @@
+.modal {
+    display: none;
+    /*display: flex;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #313131;
+}
+
+.modal__container {
+    margin: auto;
+    padding: rem(37px) rem(66px);
+    background: #fff;
+}
+
+.modal__content {
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: rem(18px);
+}

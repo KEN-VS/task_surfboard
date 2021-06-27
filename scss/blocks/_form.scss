@@ -91,6 +91,10 @@
         }
     }
     
+    .input-error {
+        border: rem(3px) solid red;
+    }
+    
     .form__controls {
         display: flex;
         flex-wrap: wrap;
