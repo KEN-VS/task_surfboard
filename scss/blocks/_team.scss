@@ -56,7 +56,7 @@
    }
    
    .team__avatar {
-       width: rem(220px);
+       max-width: rem(220px);
        height: rem(290px);
        overflow: hidden;
        margin-bottom: rem(21px);
