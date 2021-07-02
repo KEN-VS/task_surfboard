@@ -482,6 +482,68 @@
                 </div>
 
             </section>
+            <section class="section assortment-section">
+                <h2 class="section__title">Меню</h2>
+                <ul class="assortment__list">
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__title">
+                            <div class="assortment__desc">Лонгборды</div>
+                        </a>
+                        <div class="assortment__container">
+                            <div class="assortment__content">
+                                <button class="assortment__btn">
+                                    <span class="assortment__plank"></span>
+                                    <span class="assortment__plank"></span>
+                                </button>
+                                <div class="assortment__text">
+                                    <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
+                                        по ним.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__title">
+                            <img src="./img/assortment_slider/smenuslide.png" alt="surfer" class="assortment__img">
+                            <div class="assortment__desc">Шортборды</div>
+                        </a>
+                        <div class="assortment__container">
+                            <div class="assortment__content">
+                                <button class="assortment__btn">
+                                    <span class="assortment__plank"></span>
+                                    <span class="assortment__plank"></span>
+                                </button>
+                                <div class="assortment__text">
+                                    <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
+                                        по ним.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="assortment__item">
+                        <a href="#" class="assortment__title">
+                            <img src="./img/assortment_slider/thmenuslide.png" alt="surfer" class="assortment__img">
+                            <div class="assortment__desc">Софттопы</div>
+                        </a>
+                        <div class="assortment__container">
+                            <div class="assortment__content">
+                                <button class="assortment__btn">
+                                    <span class="assortment__plank"></span>
+                                    <span class="assortment__plank"></span>
+                                </button>
+                                <div class="assortment__text">
+                                    <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
+                                        по ним.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
             <section class="section">
                 <div class="container">
                     <h2 class="section__title">отзывы</h2>
@@ -552,6 +614,29 @@
                         </ul>
                     </div>
 
+                </div>
+            </section>
+            <section class="section video-section">
+                <div class="container">
+                    <h2 class="section__title">как мы работаем</h2>
+                    <div class="video__wrapper">
+                        <div class="video__player">
+                            <video src="#" id="player"></video>
+                            <button class="video__btn">
+                                <img src="#" alt="play" class="video__btn-img play">
+                            </button>
+                        </div>
+                        <div class="video__toolbar">
+                            <div class="duration">
+                                <div class="duration__btn_wrap">
+                                    <button class="duration__btn play"></button>
+                                </div>
+                                <div class="duration__length-wrap">
+                                    <input type="range" class="duration__length" id="durationLevel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section order-section">
@@ -632,16 +717,12 @@
                             <button type="reset" class="form__btn btn btn--color--trans">Очистить</button>
                         </div>
                     </form>
-
-
-
                 </div>
             </section>
             <section class="section map-section">
-                <div class="map"></div>
+                <div class="map" id="map"></div>
                 <div class="footer">
                     <div class="container footer__container">
-
                         <address class="contacts">
                             <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
                             <a href="tel:+7 800 903 90 90" class="contacts__phone">
@@ -731,11 +812,13 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     <script src="./overlay.js"></script>
     <script src="./slider.js"></script>
     <script src="./reviews.js"></script>
     <script src="./team.js"></script>
     <script src="./modal.js"></script>
+    <script src="./map.js"></script>
 </body>
 
 </html>
