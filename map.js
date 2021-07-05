@@ -12,7 +12,7 @@ function init() {
     const myPlaceMark = new ymaps.Placemark([55.752004, 37.576133], {}, {
         draggable: false,
         iconLayout: 'default#image',
-        iconImageHref: '/img/mark.svg',
+        iconImageHref: './img/mark.svg',
         iconImageSize: [44, 54],
         iconImageOffset: [-30, -50]
 
