@@ -149,7 +149,6 @@ if (IsMobiles) {
 
             scroller[scrollDirection]();
 
-            alert(direction);
         }
     });
 }
