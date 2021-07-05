@@ -1,0 +1,67 @@
+              .duration {
+                  display: flex;
+                  align-items: center;
+                  flex: 1;
+              }
+              
+              .duration__btn-wrap {
+                  display: flex;
+                  align-items: center;
+                  flex-shrink: 0;
+                  margin-right: rem(12px);
+              }
+              
+              .duration__btn {
+                  height: 0;
+                  width: 0;
+                  border: 11px solid transparent;
+                  border-left-color: #fff;
+                  border-right-width: 0;
+                  background: transparent;
+                  outline: 0;
+                  &--active {
+                      border: 7px solid #fff;
+                      height: 20px;
+                      border-top: 0;
+                      border-bottom: 0;
+                      padding: 1px;
+                  }
+                  @include tablets {
+                      border: 7px solid transparent;
+                      border-left-color: #fff;
+                      border-right-width: 0;
+                      background: transparent;
+                      outline: 0;
+                      &--active {
+                          border: 5px solid #fff;
+                          height: 14px;
+                          border-top: 0;
+                          border-bottom: 0;
+                          padding: 1px;
+                      }
+                  }
+                  @include phones {
+                      border: 5px solid transparent;
+                      border-left-color: #fff;
+                      border-right-width: 0;
+                      background: transparent;
+                      outline: 0;
+                      &--active {
+                          border: 3px solid #fff;
+                          height: 12px;
+                          border-top: 0;
+                          border-bottom: 0;
+                          padding: 1px;
+                      }
+                  }
+              }
+              
+              .duration__length-wrap {
+                  width: 100%;
+                  display: flex;
+                  align-self: center;
+              }
+              
+              .duration__length {
+                  width: rem(445px);
+              }

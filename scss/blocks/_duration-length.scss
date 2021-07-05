@@ -1,0 +1,61 @@
+.duration-length {
+    width: 100%;
+    height: rem(4px);
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    background: linear-gradient(90deg, $yellow 0%, $yellow 0%, #626262 0%);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    @include phones {
+        height: 2px;
+    }
+}
+
+.duration-length::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    width: rem(15px);
+    height: rem(15px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: $yellow;
+    @include tablets {
+        width: rem(10px);
+        height: rem(10px);
+    }
+    @include phones {
+        width: rem(6px);
+        height: rem(6px);
+    }
+}
+
+.duration-length::-moz-range-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    width: rem(15px);
+    height: rem(15px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: $yellow;
+    height: rem(10px);
+    @include tablets {
+        width: rem(10px);
+        height: rem(10px);
+    }
+    @include phones {
+        width: rem(6px);
+        height: rem(6px);
+    }
+}

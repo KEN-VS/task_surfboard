@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+            <section class="hero" data-sidemenu-theme="white" data-section-id="hero">
                 <div class="container hero__container">
 
                     <header class="header">
@@ -25,25 +25,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a data-scroll-to="benefits" href="#" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Серфборды</a>
+                                    <a data-scroll-to="slider" href="#" class="menu__link">Серфборды</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a data-scroll-to="team" href="#" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Меню</a>
+                                    <a data-scroll-to="assortment" href="#" class="menu__link">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a data-scroll-to="reviews" href="#" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a data-scroll-to="video" href="#" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты </a>
+                                    <a data-scroll-to="map" href="#" class="menu__link">Контакты </a>
                                 </li>
                             </ul>
                         </nav>
@@ -69,7 +69,7 @@
                         </h1>
                         <div class="hero__desc">Самый большой выбор серфбордов в мире</div>
 
-                        <a href="#" class="btn">ЗАКАЗАТЬ</a>
+                        <a data-scroll-to="order" href="#" class="btn">ЗАКАЗАТЬ</a>
 
                     </div>
                     <div class="hero__icons">
@@ -106,31 +106,31 @@
                     <nav class="menu overlay__menu">
                         <ul class="menu__list overlay__menu-list">
                             <li class="menu__item ">
-                                <a href="#" class="menu__link">О нас</a>
+                                <a data-scroll-to="benefits" href="#" class="menu__link">О нас</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Серфборды</a>
+                                <a data-scroll-to="slider" href="#" class="menu__link">Серфборды</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Команда</a>
+                                <a data-scroll-to="team" href="#" class="menu__link">Команда</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Меню</a>
+                                <a data-scroll-to="assortment" href="#" class="menu__link">Меню</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
+                                <a data-scroll-to="reviews" href="#" class="menu__link">Отзывы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Как мы работаем</a>
+                                <a data-scroll-to="video" href="#" class="menu__link">Как мы работаем</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты </a>
+                                <a data-scroll-to="map" href="#" class="menu__link">Контакты </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" data-sidemenu-theme="black" data-section-id="benefits">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -187,7 +187,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section slider-section">
+            <section class="section slider-section" data-sidemenu-theme="black" data-section-id="slider">
                 <div class="container">
                     <div class="slider__controls">
                         <a id="sliderLeft" class="slider__control slider__control--left" href="#">
@@ -360,7 +360,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section class="section team-section" data-sidemenu-theme="black" data-section-id="team">
                 <div class="container">
                     <h2 class="section__title">команда</h2>
                     <ul class="team team-desctop">
@@ -480,13 +480,13 @@
                         </li>
                     </ul>
                 </div>
-
             </section>
-            <section class="section assortment-section">
+            <section class="section assortment-section" data-sidemenu-theme="white" data-section-id="assortment">
                 <h2 class="section__title">Меню</h2>
                 <ul class="assortment__list">
                     <li class="assortment__item">
                         <a href="#" class="assortment__title">
+                            <img src="./img/assortment_slider/fmenuslide.png" alt="surfer" class="assortment__img">
                             <div class="assortment__desc">Лонгборды</div>
                         </a>
                         <div class="assortment__container">
@@ -544,7 +544,7 @@
                 </ul>
 
             </section>
-            <section class="section">
+            <section class="section" data-sidemenu-theme="black" data-section-id="reviews">
                 <div class="container">
                     <h2 class="section__title">отзывы</h2>
                     <div class="reviews">
@@ -616,30 +616,43 @@
 
                 </div>
             </section>
-            <section class="section video-section">
-                <div class="container">
+            <section class="section video-section" data-sidemenu-theme="black" data-section-id="video">
+                <div class="container video__container">
                     <h2 class="section__title">как мы работаем</h2>
                     <div class="video__wrapper">
                         <div class="video__player">
-                            <video src="#" id="player"></video>
-                            <button class="video__btn">
-                                <img src="#" alt="play" class="video__btn-img play">
+                            <video src="./src/video.mp4" id="player" class="video__window" poster="./img/videoposter.png"></video>
+                            <button class="video__btn buttons play">
+                                <svg class="video__btn-img ">
+                                    <use xlink:href="./img/sprite.svg#bigplay"></use>
+                                </svg>
                             </button>
                         </div>
                         <div class="video__toolbar">
-                            <div class="duration">
-                                <div class="duration__btn_wrap">
-                                    <button class="duration__btn play"></button>
+                            <div class="duration video__toolbar-duration">
+                                <div class="duration__btn-wrap">
+                                    <button class="duration__btn play">
+                                    </button>
                                 </div>
                                 <div class="duration__length-wrap">
-                                    <input type="range" class="duration__length" id="durationLevel">
+                                    <input type="range" class="duration__length duration-length" id="durationLevel">
+                                </div>
+                            </div>
+                            <div class="sound">
+                                <button class="sound__btn buttons" id="mic">
+                                    <svg class="sound__btn-img ">
+                                        <use xlink:href="./img/sprite.svg#soundbtn"></use>
+                                    </svg>
+                                </button>
+                                <div class="sound__volume">
+                                    <input type="range" class="sound__length duration-length" id="soundLevel">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section order-section">
+            <section class="section order-section" data-sidemenu-theme="white" data-section-id="order">
                 <div class="container">
                     <h2 class="section__title order-section__title">закажите доставку
                     </h2>
@@ -719,7 +732,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section map-section">
+            <section class="section map-section" data-sidemenu-theme="black" data-section-id="map">
                 <div class="map" id="map"></div>
                 <div class="footer">
                     <div class="container footer__container">
@@ -780,32 +793,32 @@
         </div>
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
-                <li class="fixed-menu__item fixed-menu__item--active">
-                    <a class="fixed-menu__link" href="#"></a>
+                <li class="fixed-menu__item ">
+                    <a data-scroll-to="hero" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="benefits" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="slider" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="team" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="assortment" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="reviews" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="video" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="order" class="fixed-menu__link" href="#"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a class="fixed-menu__link" href="#"></a>
+                    <a data-scroll-to="map" class="fixed-menu__link" href="#"></a>
                 </li>
             </ul>
         </nav>
@@ -813,12 +826,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
     <script src="./overlay.js"></script>
     <script src="./slider.js"></script>
     <script src="./reviews.js"></script>
     <script src="./team.js"></script>
     <script src="./modal.js"></script>
     <script src="./map.js"></script>
+    <script src="./assortment.js"></script>
+    <script src="./video.js"></script>
+    <script src="./blockscroll.js"></script>
+    <script src="./ops.js"></script>
 </body>
 
 </html>

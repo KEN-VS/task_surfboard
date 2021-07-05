@@ -8,6 +8,9 @@
             background: url(../img/mainbg.png) right 20% bottom no-repeat, rgba(25, 104, 177, 1);
             background-size: auto calc(100% - 91px);
         }
+        @include Iphones {
+            height: 100%;
+        }
     }
     
     .hero__container {

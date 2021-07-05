@@ -1,3 +1,82 @@
 .video-section {
     background: $biege;
 }
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: rem(662px);
+    height: rem(392px);
+    @include tablets {
+        width: rem(630px);
+        height: rem(351px);
+    }
+    @include phones {
+        width: rem(440px);
+        height: rem(200px);
+    }
+}
+
+.video__player {
+    width: 100%;
+    position: relative;
+}
+
+.video__window {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.video__btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: rem(75px);
+    height: rem(110px);
+    padding: 0;
+    &--active {
+        opacity: 0;
+    }
+    @include phones {
+        width: rem(49px);
+        height: rem(69px);
+    }
+}
+
+.video__btn-img {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+.video__toolbar {
+    background: #404040;
+    width: 100%;
+    height: rem(35px);
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 rem(20px);
+    @include phones {
+        height: rem(25px);
+        padding: 0 rem(10px);
+    }
+}
+
+.video__toolbar-duration {
+    margin-right: rem(22px);
+}

@@ -1,0 +1,63 @@
+.sound {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    padding-left: 3%;
+}
+
+.sound__btn {
+    display: block;
+    margin-right: rem(25px);
+    &::before {
+        content: "";
+        height: rem(29px);
+        width: 3px;
+        background-color: red;
+        position: absolute;
+        display: block;
+        left: 27%;
+        top: 4%;
+        transform: rotate(-42deg);
+        -webkit-transform: rotate(-42deg);
+        -moz-transform: rotate(-42deg);
+        -ms-transform: rotate(-42deg);
+        -o-transform: rotate(-42deg);
+        opacity: 0;
+        transition: opacity .4s;
+        -webkit-transition: opacity .4s;
+        -moz-transition: opacity .4s;
+        -ms-transition: opacity .4s;
+        -o-transition: opacity .4s;
+        z-index: 2;
+    }
+    &--active {
+        &::before {
+            opacity: 1;
+        }
+    }
+    @include tablets {
+        margin-right: rem(7px);
+    }
+    @include phones {
+        left: 27%;
+        top: 30%;
+        margin-right: rem(9px);
+    }
+}
+
+.sound__btn-img {
+    cursor: pointer;
+    width: rem(16px);
+    height: rem(16px);
+    fill: #fff;
+    @include phones {
+        width: rem(10px);
+        height: rem(10px);
+    }
+}
+
+.sound__volume {
+    display: flex;
+    align-items: center;
+}

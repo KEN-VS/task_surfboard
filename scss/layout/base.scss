@@ -9,6 +9,13 @@ html {
     @include Iphones {
         font-size: 1.75vmax;
     }
+    &.locked {
+        overflow: hidden;
+        width: calc(100% - 17px);
+        @include tablets {
+            width: 100%;
+        }
+    }
 }
 
 html,
@@ -57,14 +64,6 @@ button {
     box-sizing: border-box;
 }
 
-.wrapper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-}
-
 ul {
     padding: 0;
     margin: 0;
@@ -72,6 +71,25 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+    will-change: transform;
 }
 
 .container {

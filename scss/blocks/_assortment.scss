@@ -1,55 +1,113 @@
-.assortment-section {
-    position: relative;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.assortment-section .section__title {
-    color: #fff;
-    z-index: 2;
-    padding: 10% 10%;
-}
-
-.assortment__list {
-    background: url(../img/assortment_slider/menusurfmain.png) center center/ cover no-repeat;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.assortment__title {
-    position: relative;
-    display: block;
-    background: url(../../img/assortment_slider/fmenuslide.png) center center/ cover no-repeat;
-    width: 102px;
-    height: 100%;
-}
-
-.assortment__img {
-    height: 100%;
-    display: block;
-}
-
-.assortment__desc {
-    position: absolute;
-    bottom: 15%;
-    left: -58%;
-    transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    font-size: rem(48px);
-    color: #fff;
-}
-
-.assortment__container {
-    width: 0;
-    overflow: hidden;
-}
+        .assortment-section {
+            background: url(../img/assortment_slider/menusurfmain.png) center center/ cover no-repeat;
+            position: relative;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        .assortment-section .section__title {
+            color: #fff;
+            padding: 10% 10%;
+            @include tablets {
+                padding: 12% 5%;
+            }
+            @include Iphones {
+                padding: 30% 0%;
+                transform: rotate(270deg);
+                -webkit-transform: rotate(270deg);
+                -moz-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+            }
+        }
+        
+        .assortment__list {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .assortment__item {
+            display: flex;
+            &--active {
+                @include phones {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                }
+            }
+        }
+        
+        .assortment__title {
+            position: relative;
+            display: flex;
+            width: 102px;
+            height: 100%;
+        }
+        
+        .assortment__img {
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .assortment__desc {
+            position: absolute;
+            bottom: 15%;
+            left: -58%;
+            transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            font-size: rem(48px);
+            font-weight: bold;
+            color: #fff;
+            min-width: rem(250px);
+            @include tablets {
+                font-size: rem(50px);
+                left: -64%;
+            }
+        }
+        
+        .assortment__container {
+            width: 0;
+            overflow: hidden;
+            background: rgba(51, 53, 55, .9);
+            position: relative;
+            transition: width .4s;
+            -webkit-transition: width .4s;
+            -moz-transition: width .4s;
+            -ms-transition: width .4s;
+            -o-transition: width .4s;
+        }
+        
+        .assortment__content {
+            padding: 31px 80px 31px 38px;
+            @include tablets {
+                padding: 42px 47px 38px 38px;
+            }
+            @include phones {
+                padding: 29px 28px 38px 38px;
+            }
+        }
+        
+        .assortment__text {
+            color: #fff;
+            font-size: rem(16px);
+            line-height: 1.5;
+            @include tablets {
+                font-size: rem(18px);
+            }
+        }

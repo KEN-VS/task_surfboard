@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include Iphones {
+        height: 100%;
+    }
 }
 
 .section__title {
