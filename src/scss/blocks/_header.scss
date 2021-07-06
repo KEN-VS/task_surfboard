@@ -51,11 +51,16 @@
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
     @include tablets {
         font-size: rem(36px);
         line-height: 2;
         font-weight: normal;
         &:hover {
+            text-decoration: none;
             cursor: pointer;
             opacity: .9;
         }

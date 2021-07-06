@@ -6,6 +6,11 @@
 }
 
 .fixed-menu--dark .fixed-menu__item {
+    &:hover {
+        .fixed-menu__link {
+            border-color: #000;
+        }
+    }
     &--active {
         .fixed-menu__link {
             border-color: #000;
@@ -21,6 +26,11 @@
 
 .fixed-menu__item {
     margin-bottom: rem(6px);
+    &:hover {
+        .fixed-menu__link {
+            border-color: #fff;
+        }
+    }
     &--active {
         .fixed-menu__link {
             border-color: #fff;
