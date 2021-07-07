@@ -77,11 +77,17 @@
         return {
             next() {
                 if (nextSection.length) {
+                    if ($("body").hasClass("fancybox-active")) {
+                        return;
+                    }
                     performTransition(nextSection.index())
                 }
             },
             prev() {
                 if (prevSection.length) {
+                    if ($("body").hasClass("fancybox-active")) {
+                        return;
+                    }
                     performTransition(prevSection.index())
                 }
             }
@@ -107,6 +113,7 @@
 
     $(window).on("keydown", e => {
 
+
         const tagName = e.target.tagName.toLowerCase();
 
         const userTypingInInputs = tagName == "input" || tagName == "textarea";
@@ -116,11 +123,12 @@
 
 
         switch (e.keyCode) {
-            case 104:
+
+            case 38:
                 scroller.prev();
                 break;
 
-            case 98:
+            case 40:
                 scroller.next();
                 break;
         }
