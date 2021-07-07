@@ -10,7 +10,10 @@
 
     hamburger.addEventListener("click", toggleMenu);
 
-
+    let overlayItems = document.querySelectorAll(".overlay__link");
+    for (let i = 0; i < overlayItems.length; i++) {
+        overlayItems[i].addEventListener("click", toggleMenu);
+    }
 
 
 })()
